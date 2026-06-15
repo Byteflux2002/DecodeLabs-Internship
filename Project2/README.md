@@ -21,6 +21,14 @@ Iris Dataset
 ## Output
 The model achieved high accuracy in classifying data.
 
+## Screenshots
+
+## Concepts Learned 
+1. Supervised Learning
+2. Data Classification
+3. Model Training
+4. Model Evaluation 
+
 ## Author
 Shubhi Shukla
 Artificial Intelligence Intern at DecodeLabs 
