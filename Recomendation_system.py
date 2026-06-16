@@ -1,0 +1,41 @@
+Movies = {
+    "Action": ["Avengers", "John Wick", "Mission Impossible"],
+    "Comedy": ["3 Idiots", "Hera Pheri", "Bhool Bhulaiyaa"],
+    "Sci-Fi": ["Interstellar", "Inception", "The Matrix"],
+    "Horror": ["The Conjuring", "Annabella", "Insidious"]
+}
+print("Welcome to the Movie Recommendation System!")
+print("Available Genres:")
+
+for genre in Movies:
+    print("-", genre)
+
+choice = input("\nPlease enter your favourite genre: ")
+
+
+if choice in Movies:
+    print("\nHere are some recommended movies you might enjoy:")
+    for movie in Movies[choice]:
+        print(movie)
+else:
+    print("Sorry, we don't have recommendations for that genre! Please try again.")
+
+user_interests = input("Enter interests separated by comma: ").lower().split(",")
+
+items = {
+    "Interstellar": ["space", "science", "future"],
+    "Avengers": ["action", "superhero", "fight"],
+    "3 Idiots": ["comedy", "college", "friendship"]
+}
+
+best_match = None
+best_score = 0
+
+for item, tags in items.items():
+    score = len(set(user_interests) & set(tags))
+
+    if score > best_score:
+        best_score = score
+        best_match = item
+
+print("\nRecommended Item:", best_match)    
