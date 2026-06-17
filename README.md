@@ -16,4 +16,4 @@ This is a simple chatbot developed using Python as part of the DecodeLabs Intern
 - Python
 
 ## Author
-Shubhi
+Shubhi Shukla
